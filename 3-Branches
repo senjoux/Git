@@ -1,0 +1,30 @@
+*Branches can be defined as parallel timelines
+
+*The initial/default branch for git is 'master'
+
+---------
+
+*Create a branch :
+
+git branch <branch_name>
+
+---------
+
+*Switch branch :
+
+git checkout <branch_name>
+
+---------
+
+*Merge changes :
+
+1- git checkout <parent_branch>
+2- git merge <other_branches> 
+
+---------
+
+*Delete a branch :
+
+git branch -d <branch_name>
+
+
