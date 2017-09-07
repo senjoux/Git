@@ -1,0 +1,36 @@
+unwanted commit 
+
+merging different branches 
+
+----------
+
+*Update the previous commit, by appending new changes :
+
+git commit --amend 
+
+----------
+
+
+*Update/rebase the current branch history to include the commits of another branch
+
+1-git checkout <features_branche>
+2-some changes on <features_branche>
+3-commit the changes
+4-git checkout <primary_branche>
+5-some changes on <primary_branche>
+6-commit the changes
+7-git checkout <features_branche>
+8-git rebase <primary_branche>  : <features_branche> will now have the history of <primary_branche> along their changes   
+9-git checkout <primary_branche>
+10-git merge <features_branche> : merge the changes from <features_branche>
+
+*Update/rebase same as before but Interactively !! : choose which commits to include or squash commits ..
+
+git rebase -i <branch_name>  
+
+
+---------
+
+*Update/rebase a branch using it's own history/re-create the history, each ^ is a commit backwards 
+
+git rebase -i HEAD^^^^

@@ -1,0 +1,35 @@
+*Stashing =  is process of taking and saving the dirty state (modified tracked files and staged changes) of the repository for later 
+	     re-use later. This dirty state can be applied from within another branch.
+
+
+---------
+
+*Save the dirty state :
+
+git stash
+
+*OR
+
+git stash save <custom_stash_name>
+
+* Only tracked files will saved by the stash 
+
+---------
+
+*Display the list of stashes :
+
+git stash list
+
+----------
+
+*Remove/Delete a stash :
+
+git stash drop <stash_name>
+
+----------
+
+*Show saved stash details :
+
+git stash show <stash_name> 
+
+   
