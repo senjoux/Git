@@ -1,0 +1,65 @@
+*Go back to given commit  :
+
+git checkout <commit_id>	
+
+*Any new commit after a checked out previous commit will be detached form the git repository history
+ 
+---------
+
+*Restore a file to it's state at a given commit in the history :
+  
+git checkout <commit_id>  <file_name> 
+
+---------
+
+*Undo/revert a commit : only undo what was changed/affected by a commit in the repository history :
+
+git revert <commit_id>
+
+---------
+
+*Go backward in history to a given commit : !! the history of commits which came after the target commit will be lost, os the history could be re-created with this option
+
+git reset <commit_id>  
+
+*OR 
+
+git reset HEAD<^^^^>   
+
+* Each '^' represents a step back in the history of commits 
+---------
+
+*Unstage a file :
+
+git reset HEAD <file_name>
+
+---------
+
+*Commit anything including deletions :
+
+git commit --all   
+
+*Commit updates except deletions :
+
+git commit .  
+
+---------
+
+*Forcibly undo all modifications = Force Mode
+
+git reset --hard
+
+---------
+
+*Softly undo all modifications : keeps modifications as staged = Soft Mode
+
+git reset --soft
+
+---------
+
+*Softly undo all modifications : keeps modifications as unstanged = Mixed Mode
+
+git reset --mixed
+
+
+
