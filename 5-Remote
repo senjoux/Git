@@ -1,0 +1,82 @@
+*Initialize a git repository with no work folder :
+
+git init --bare
+
+---------
+
+*List all remotes plus details :
+
+git remote -v
+
+---------
+
+*Add remote :
+
+git add <remote_name> <URI_to_repository>
+
+---------
+
+*Rename a remote :
+
+git remote rename <old_name> <new_name>
+
+---------
+
+*List remote available branches :
+
+git branch -r
+
+---------
+
+*Push to remote branch:
+
+git push <remote_name> <remote_branch>
+
+--------- 
+
+*Delete a remote branch :
+
+git push <remote_name> --delete <remote_branch>
+
+---------
+
+*Pull commits from remote branch :
+
+git pull <remote_name> <branch_name> 
+
+---------
+
+*Clone a remote repository :
+
+git clone <URI>
+
+*Clone a remote repository but only get a limited history :
+
+git clone <URI> --depth <depth_integer_value>
+
+---------
+
+*If local branch is behind remote branch, a pull with rebase can fix it (not like merge which requires an additional commit):
+
+git pull --rebase <remote_name> <remote_branch_name>
+
+---------
+
+*To activate automatic rebase pull (git pull --rebase) :
+
+gti config --global branch.autosetuprebase always
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
